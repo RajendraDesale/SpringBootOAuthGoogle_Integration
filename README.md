@@ -8,7 +8,7 @@ owner from URL : http://localhost:8080/oauth/authorize?client_id=clientapp&respo
 > It will bring a login page. Provide username and password. For this demo, use “RajendraDesale” and.
 After login, you will be redirected to grant access page where you choose to grant access to third party application.
 
-> It will redirect to a URL like : http://localhost:8080/login?code=NgTFY2. 
+> It will redirect to a URL like : http://localhost:8081/login?code=NgTFY2. 
 Here 'NgTFY2' is authorization code for the third party application
 
 ###### Step - 2
@@ -27,7 +27,7 @@ authorization: Basic Y2xpZW50YXBwOjEyMzQ1Ng==
 Form data - application/x-www-form-urlencoded: 
 grant_type=authorization_code
 code=NgTFY2
-redirect_uri=http://localhost:8080/login
+redirect_uri=http://localhost:8081/login
 
 > It will ask for client app credentials in separate window.
   Search in OAuth2AuthorizationServer.java file in Project.
@@ -37,7 +37,7 @@ redirect_uri=http://localhost:8080/login
 ###### Or 
 > make similar request from cURL.
 Access token request from cURL
-cmd - curl -X POST --user clientapp:123456 http://localhost:8080/oauth/token 
+cmd - curl -X POST --user clientapp:123456 http://localhost:8081/oauth/token 
         -H "content-type: application/x-www-form-urlencoded"
         -d "code=NgTFY2&grant_type=authorization_code&redirect_uri=http%3A%2F%2Flocalhost%3A8082%2Flogin&scope=read_user_info"
 		
