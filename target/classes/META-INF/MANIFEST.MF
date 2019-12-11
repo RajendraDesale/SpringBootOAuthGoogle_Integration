@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: oauth2
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Rajendra.Desale
+Implementation-Vendor-Id: com.example
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://maven.apache.org/SpringBootOAuth2Project
+Created-By: Maven Integration for Eclipse
+
